@@ -1,0 +1,11 @@
+{
+    "facebook": {
+        "email": "your@email.here",
+        "password": "Super Secure Password!",
+        "person":"John Doe",
+        "identifier":"their-unique-facebook-identifier"
+    },
+    "email": {
+        
+    }
+}
