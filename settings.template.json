@@ -6,6 +6,8 @@
         "identifier":"their-unique-facebook-identifier"
     },
     "email": {
-        
+        "email": "your@email.here",
+        "username": "BruceLee",
+        "password": "Another Super Secure Password"
     }
 }

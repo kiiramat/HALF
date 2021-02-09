@@ -1,5 +1,5 @@
 const login = require("facebook-chat-api");
-const { email, password, person, identifier } = require("./settings.json").facebook;
+const { email, password, person, identifier } = require("./settings.json")?.facebook;  // ? returns null if equire("./settings.json") doesn't exist
 
 function sendMessage(message) {
     login({email: email, password: password}, (err, api) => {
@@ -10,7 +10,7 @@ function sendMessage(message) {
                 return person.profileUrl.includes(identifier)
             });
             api.sendMessage(message, recipient.userID);
-        });   
+        });
     });
 }
 
