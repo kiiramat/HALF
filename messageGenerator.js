@@ -7,8 +7,8 @@ function actualDate() {
 
 function createRandomizedMessage () {
     const messageGreeting = MESSAGES.greetings[Math.floor(Math.random() * MESSAGES.greetings.length)]
-    const getMessageByDate = MESSAGES[actualDate()];
-    const messageBody = getMessageByDate[Math.floor(Math.random() * getMessageByDate.length)]
+    const messageForDate = MESSAGES[actualDate()];
+    const messageBody = messageForDate[Math.floor(Math.random() * messageForDate.length)]
     return `${messageGreeting}\n${messageBody}` 
 }
 
